@@ -3,7 +3,7 @@
 source $(dirname $0)/config
 mkdir -p certs etc /srv/log/nginx
 hostname $HOST_NAME
-cat $EXTERNAL_IP $HOST_NAME >> /etc/hosts
+echo $EXTERNAL_IP $HOST_NAME >> /etc/hosts
 
 ################### INSTALL DOCKER ###########################
 apt update
