@@ -1,7 +1,7 @@
 #!/bin/bash
 
 source $(dirname $0)/config
-mkdir -p certs etc /srv/log/nginx
+mkdir -p certs etc $NGINX_LOG_DIR
 hostname $HOST_NAME
 echo $EXTERNAL_IP $HOST_NAME >> /etc/hosts
 
